@@ -1,54 +1,70 @@
 import numpy as np
 
-"""minha_lista = [1, 2, 3]
 
-x = np.array(minha_lista)
-print(x)
-print("="*30)
+def ab():
+    print("="*80)
+
+
+minha_lista = [1, 2, 3]
+print(np.array(minha_lista))
+ab()
 minha_matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 x = np.array(minha_matriz)
-print(x)"""
-
-print(np.arange(0, 10, 2))
-print("="*30)
-print(np.zeros(5))
-print("="*30)
-arr = np.zeros((5, 5))
-print(arr)
-print("="*30)
-ari = np.ones((4, 4))
-print(ari)
-print("="*30)
-
-x = np.eye(4)
 print(x)
-print("="*30)
-y = np.linspace(0, 10, 3)
+ab()
+
+y = np.arange(0, 11, 2)
 print(y)
+ab()
 
-print("="*30)
+teste = np.array([[np.arange(0, 11), np.arange(10, 21), np.arange(20, 31)], [np.arange(0, 11), np.arange(10, 21), np.arange(20, 31)], [np.arange(0, 11), np.arange(10, 21), np.arange(20, 31)]])
+print(teste)
 
-z = np.random.rand(4, 4, 3)
+ab()
+z = np.zeros(3)
 print(z)
-print("="*30)
-print("="*30)
-z = np.random.randn(4, 5)
-print(z)
-print("="*30)
+ab()
 
-w = np.random.randint(0, 100, 10)
-print(w)
-print("="*30)
+m = np.zeros((5, 5))
+print(m)
+ab()
+u = np.ones((3, 3))
+print(u)
+ab()
+print(np.eye(5))
+
+ab()
+ln = np.linspace(0, 10, 4)
+print(ln)
+ab()
+
+r = np.random.rand(5)
+print(r)
+ab()
+r = np.random.rand(5, 4)
+print(r)
+ab()
+
+n = np.random.randn(4)
+print(n)
+ab()
+
+rd = np.random.randint(0, 101, 10)
+print(rd)
+
+ab()
+
 arr = np.random.rand(25)
 print(arr)
-print("="*30)
-
-print(arr.reshape(5, 5))
-
-print("="*30)
+ab()
+print(arr.reshape((5, 5)))
+ab()
 
 print(arr.max())
+ab()
 print(arr.min())
-print("="*30)
+ab()
 print(arr.argmax())
+ab()
 print(arr.argmin())
+
